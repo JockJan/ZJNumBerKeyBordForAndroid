@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:id="@+id/table_num"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="@color/divider"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/layout_input_amount_style" >
+
+                <Button
+                    android:id="@+id/btn_1"
+                    style="@style/btn_input_amount_style"
+                    android:layout_marginRight="0.5dp"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/btn_2"
+                    style="@style/btn_input_amount_style"
+                    android:layout_marginRight="0.5dp"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/btn_3"
+                    style="@style/btn_input_amount_style"
+                    android:text="3" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_input_amount_style" >
+
+                <Button
+                    android:id="@+id/btn_4"
+                    style="@style/btn_input_amount_style"
+                    android:layout_marginRight="0.5dp"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/btn_5"
+                    style="@style/btn_input_amount_style"
+                    android:layout_marginRight="0.5dp"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/btn_6"
+                    style="@style/btn_input_amount_style"
+                    android:text="6" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_input_amount_style" >
+
+                <Button
+                    android:id="@+id/btn_7"
+                    style="@style/btn_input_amount_style"
+                    android:layout_marginRight="0.5dp"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/btn_8"
+                    style="@style/btn_input_amount_style"
+                    android:layout_marginRight="0.5dp"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/btn_9"
+                    style="@style/btn_input_amount_style"
+                    android:text="9" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_input_amount_style" >
+
+                <Button
+                    android:id="@+id/btn_t"
+                    style="@style/btn_input_amount_style"
+                    android:layout_marginRight="0.5dp"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/btn_0"
+                    style="@style/btn_input_amount_style"
+                    android:layout_marginRight="0.5dp"
+                    android:text="0" />
+
+                <ImageButton
+                    android:id="@+id/btn_d"
+                    style="@style/btn_input_amount_style"
+                    android:src="@mipmap/delete_icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

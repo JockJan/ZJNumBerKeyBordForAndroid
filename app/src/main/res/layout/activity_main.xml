@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:layout_below="@id/header"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <LinearLayout
+        android:id="@+id/bodyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_below="@id/header"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/word1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_password_bg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:maxLength="1"
+                    android:text=""
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/word2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_password_bg"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:inputType="textPassword"
+                    android:maxLength="1"
+                    android:text=""
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/word3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_password_bg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:maxLength="1"
+                    android:text=""
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/word4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_password_bg"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:inputType="textPassword"
+                    android:maxLength="1"
+                    android:text=""
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/hideEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:inputType="number"
+                android:padding="16.0dip"
+                android:gravity="center_vertical"
+                android:text=""
+                android:longClickable="false"
+                android:maxLength="4"
+                android:textColor="@color/transparent"
+                android:textCursorDrawable="@drawable/color_cursor_transparent"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
